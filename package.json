@@ -1,4 +1,12 @@
 {
+  - uses: actions/checkout@v2
+  - name: Install dependencies
+    run: npm install
+  - name: Run Tests
+    run: npm test
+  - name: Performance Benchmark
+    run: npm run benchmark-api
+
   "name": "web-application",
   "version": "1.0.0",
   "description": "A web application with API data fetching and frontend interface",
