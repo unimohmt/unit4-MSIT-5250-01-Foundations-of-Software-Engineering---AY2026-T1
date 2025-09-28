@@ -4,13 +4,13 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-  - uses: actions/checkout@v2
-  - name: Install dependencies
-    run: npm install
-  - name: Run Tests
-    run: npm test
-  - name: Performance Benchmark
-    run: npm run benchmark-api
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Run Tests
+        run: npm test
+      - name: Performance Benchmark
+        run: npm run benchmark-api
       - uses: actions/checkout@v2
 - name: Install dependencies and test
   run: |
@@ -20,3 +20,4 @@ jobs:
 - name: Performance Benchmark
   run: npm run benchmark-api
   working-directory: your-subfolder-name
+
