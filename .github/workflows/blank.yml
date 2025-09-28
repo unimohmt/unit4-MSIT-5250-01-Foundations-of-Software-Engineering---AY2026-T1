@@ -2,7 +2,8 @@
   run: npm install
 
 - name: Install Jest
-  run: npm install --save-dev jest
+  run: npm install --save-dev jest-environment-jsdom
+
 
 - name: Run tests
   run: npm test
