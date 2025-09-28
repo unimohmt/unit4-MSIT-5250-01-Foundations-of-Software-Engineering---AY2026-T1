@@ -1,13 +1,11 @@
 name: CI Pipeline
 on: [push, pull_request]
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Install dependencies
-        run: npm install --save-dev jest-environment-jsdom
-      - name: Run Tests
-        run: npm test
-      - name: Performance Benchmark
-        run: npm run benchmark-api
+  steps:
+  - uses: actions/checkout@v2
+  - name: Install dependencies
+    run: npm install
+  - name: Run Tests
+    run: npm test
+  - name: Performance Benchmark
+    run: npm run benchmark-api
