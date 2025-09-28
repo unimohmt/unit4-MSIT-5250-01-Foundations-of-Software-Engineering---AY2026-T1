@@ -5,9 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-- name: Run Tests
+- name: Run tests
   run: npm test
-  working-directory: your-subfolder-name
+  working-directory: unit4-MSIT-5250-01-Foundations-of-Software-Engineering---AY2026-T1
+
 
 - name: Performance Benchmark
   run: npm run benchmark-api
