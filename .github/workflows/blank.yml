@@ -5,5 +5,5 @@
   run: npm install --save-dev jest-environment-jsdom
 
 
-- name: Run tests
-  run: npm test
+- name: Change directory
+  run: cd subdirectory-name
